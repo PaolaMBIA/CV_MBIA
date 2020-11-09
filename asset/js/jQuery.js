@@ -5,8 +5,8 @@ $(function(){
     documentEl.on('scroll',function(){
         let currScroll = documentEl.scrollTop();
         parallaxBg.css('background-position','0' + -currScroll/4 + 'px');
-        parallaxBg2.css('background-position','0' + -currScroll/5 + 'px');
-        parallaxBg3.css('background-position','0' + -currScroll/17 + 'px');
+        parallaxBg2.css('background-position','0' + -currScroll/8 + 'px');
+        parallaxBg3.css('background-position','0' + -currScroll/38 + 'px');
     });
 
     //affichage des blocs

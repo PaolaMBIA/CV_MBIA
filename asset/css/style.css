@@ -225,6 +225,27 @@ footer{
 }
 
 @media (max-width:480px){
+    .container.text-justify .row {
+        flex-direction: column;
+        align-content: center;
+    }
+    .container.text-justify .row .col-3{
+        padding: 0;
+    }
+    .container.text-justify .row .col-3.exp{
+        margin-top: 20px;
+    }
+    .container.text-justify .row .col.academique .col-5{
+        padding: 0;
+        margin-left: -55px;
+    }
+    .container.text-justify .row .col.academique .col-5.p p{
+        margin-right: -10px;
+    }
+    .container.text-justify .row .col.academique .col-7{
+        padding: 0;
+        margin-left: -35px;
+    }
     main .container.para{
         width: 100%;
         margin-top: 60px;
@@ -260,6 +281,7 @@ footer{
         width: 50%;
     }
     .container .row.projet .project, .container .row.projet2 .project{
+        text-align: center;
         width: 100%;
     }
     .container .row.projet .project p, .container .row.projet2 .project p{
@@ -293,6 +315,30 @@ footer{
     
 }
 @media (min-width:480px) and (max-width:740px){
+    .vertical-line{
+        display: none;
+    }
+    .container.text-justify .row {
+        flex-direction: column;
+        align-content: center;
+    }
+    .container.text-justify .row .col-3{
+        padding: 0;
+    }
+    .container.text-justify .row .col-3.exp{
+        margin-top: 20px;
+    }
+    .container.text-justify .row .col.academique .col-5{
+        padding: 0;
+        margin-left: -55px;
+    }
+    .container.text-justify .row .col.academique .col-5.p p{
+        margin-right: -10px;
+    }
+    .container.text-justify .row .col.academique .col-7{
+        padding: 0;
+        margin-left: -35px;
+    }
     main .container.para{
         width: 100%;
         margin-top: 60px;
@@ -336,12 +382,8 @@ footer{
     .container .row.projet .project p.para2{
         padding-top: 40px;
     }
-    .vertical-line{
-        display: block;
-        height: 550px;
-    }
     .col.academique .row {
-        margin-bottom: 66px;
+        margin-bottom: 6px;
     }
     .footer{
         text-align: center;
