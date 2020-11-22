@@ -23,6 +23,12 @@ function validationEmail(mail){
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+      document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+    };
+});
+
 form.addEventListener('submit',function (event){
     event.preventDefault(); //on désactive le comportement natif de l'évènement submit
     

@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -24,6 +27,9 @@ div#navbarNavDropdown.collapse.navbar-collapse{
 }
 
 /* main */
+h5{
+    text-align: center;
+}
 .container-fluide.head, .container-fluide.contact,.container-fluide.deux{
     background-attachment: fixed;
     background-position: center;
@@ -173,16 +179,13 @@ h3{
 .vertical-line{
     border-left: 2px solid #49749e;
     display: inline-block;
-    height: 350px;
+    height: 470px;
     margin:20px;
     border-style: groove;
 }
 .parcours{
     padding-bottom: 20px;
     font-size: 25px;
-}
-.col.academique .row{
-    margin-bottom: 36px;
 }
 
 
@@ -222,6 +225,39 @@ footer{
 .footer p span{
     font-size: 17px;
     font-style: italic;
+}
+
+/* haut de page */
+a#cRetour{
+    border-radius:3px;
+    padding:10px;
+    font-size:15px;
+    text-align:center;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.25);
+    position:fixed;
+    right:20px;
+    opacity:1;
+    z-index:99999;
+    transition:all ease-in 0.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+}
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+    background:rgba(0, 0, 0, 1);
+    transition:all ease-in 0.2s;
+}
+a#cRetour.cInvisible{
+    bottom:-35px;
+    opacity:0;
+    transition:all ease-in 0.5s;
+}
+
+a#cRetour.cVisible{
+bottom:20px;
+opacity:1;
 }
 
 @media (max-width:480px){
@@ -382,9 +418,6 @@ footer{
     .container .row.projet .project p.para2{
         padding-top: 40px;
     }
-    .col.academique .row {
-        margin-bottom: 6px;
-    }
     .footer{
         text-align: center;
     }
@@ -422,10 +455,13 @@ footer{
         padding-left: 0px;
     }
     .vertical-line{
-        height: 530px;
+        height: 970px;
     }
 }
 @media (min-width:768px) and (max-width: 991px){
+    .vertical-line{
+        height: 740px;
+    }
     .container-fluide .container .block2 .row{
         padding-top: 13px;
     }
